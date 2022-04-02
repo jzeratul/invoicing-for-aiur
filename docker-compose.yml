@@ -1,0 +1,27 @@
+version: '3.8'
+
+# Define services
+services:
+
+  mysqldatabase:
+    image: mysql/mysql-server:latest
+    container_name: mysql-invoice4aiur
+    ports:
+      - "3308:3306"
+    restart: always
+    environment:
+      MYSQL_DATABASE: invoice4aiur
+      MYSQL_USER: root
+      MYSQL_PASSWORD: root
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_TCP_PORT: 3306
+
+  nginx:
+    image: nginx:latest
+    container_name: nginx-invoice4aiur
+    volumes:
+      - ./nginx/nginx-dev.conf:/etc/nginx/nginx.conf
+      - ./logs:/var/logs/nginx
+    ports:
+      - 80:80
+      - 443:443

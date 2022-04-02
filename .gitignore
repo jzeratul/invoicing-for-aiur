@@ -1,0 +1,28 @@
+
+target/
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+/.mvn/
+/reactjs-ui/node_modules/
+/reactjs-ui/build/
+mvnw
+mvnw.cmd
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### VS Code ###
+.vscode/

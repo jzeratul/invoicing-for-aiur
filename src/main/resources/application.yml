@@ -1,0 +1,60 @@
+server:
+  port: 20221
+
+spring:
+  application:
+    name: invoicing-for-aiur-service
+  jpa:
+    hibernate:
+      ddl-auto: none
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+    show-sql: false
+    generate-ddl: false
+    database: mysql
+    open-in-view: false
+  flyway:
+    enabled: true
+    baseline-on-migrate: true
+  datasource:
+    url: jdbc:mysql://localhost:3308/invoice4aiur?serverTimezone=UTC&useLegacyDatetimeCode=false
+    username: root
+    password: root
+    hikari:
+      maximum-pool-size: 2
+
+settings:
+  main-email: some.email.here
+  service-provided: test_service_provided
+  invoice-title: YOUR TITLE HERE
+  invoice-note:  Maybe you want to add a note here | Maybe you want to add a note here | Maybe you want to add a note here
+  from-company:
+    name: yourname
+    address: your_address_street
+    city: your_city
+    postal-code: yourthing
+    identification-number: identification-number
+    bank-account: bank-account
+
+  companies:
+    "COMPANY1":
+      name: Company One
+      address: Street 6, 1000, Terra, Country
+      percentage: 0.5
+      contact-email: some.email.here
+    "COMPANY2":
+      name: Company Two
+      address: Street 6, 1000, Terra, Country
+      percentage: 0.83
+      contact-email: some.email.here
+    "COMPANY3":
+      name: Company Three
+      address: Street 6, 1000, Terra, Country
+      percentage: 0.134
+      contact-email: some.email.here
+    "COMPANY4":
+      name: Company Four
+      address: Street 6, 1000, Terra, Country
+      percentage: 0.5
+      contact-email: some.email.here
+
