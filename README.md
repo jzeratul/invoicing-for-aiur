@@ -18,6 +18,7 @@ Small invoicing system
  - [https://github.com/docker](https://github.com/docker)
  - [https://github.com/react-bootstrap/react-bootstrap](https://github.com/react-bootstrap/react-bootstrap)
  - [https://github.com/apache/maven](https://github.com/apache/maven)
+ - [https://github.com/facebook/react](https://github.com/facebook/react)
 
 ### Demo
 
