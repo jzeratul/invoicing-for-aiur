@@ -1,1 +1,1 @@
-pack build jzeratul/invoicing4aiur:latest --builder paketobuildpacks/builder:base --path ./target/*.jar
+pack build jzeratul/invoicing4aiur:latest --builder paketobuildpacks/builder:base --path ./target/*.jar --env BP_JVM_VERSION=17
