@@ -4,24 +4,6 @@ server:
 spring:
   application:
     name: invoicing-for-aiur-service
-  jpa:
-    hibernate:
-      ddl-auto: none
-      naming:
-        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
-    show-sql: false
-    generate-ddl: false
-    database: mysql
-    open-in-view: false
-  flyway:
-    enabled: true
-    baseline-on-migrate: true
-  datasource:
-    url: jdbc:mysql://localhost:3308/invoice4aiur?serverTimezone=UTC&useLegacyDatetimeCode=false
-    username: root
-    password: root
-    hikari:
-      maximum-pool-size: 2
 
 settings:
   main-email: some.email.here
